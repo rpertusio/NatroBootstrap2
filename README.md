@@ -12,6 +12,8 @@
 * I have unofficially named it **Natro Macro | Gummy Boot(strap) Edition** but it is NOT a real 'edition'. It's just a play on words (Get it?  GUI? Gooey? Gummy Boots? Bootstrap? nevermind...)
 * This WON'T come anytime soon. And, it will probably fail.  And I'll probably give up a few times.
 
+  ![image](https://github.com/rpertusio/NatroBootstrap2/assets/2339691/d1dfd6dc-1a9c-4b25-a7c4-b6cd66425d5e)
+
 ## WHAT IT IS
 * It's a pet project of mine that I am doing in my spare time (weekend warrior).
 * It's have posted it here for you to tinker/play/poke at my shoddy coding skills.
@@ -20,6 +22,8 @@
 ## BUT
 * It is NOT an official Natro Dev team project. It's just a hobby that (maybe) one day may make it
 * It is NOT functional as a macro.  It's just a GUI (HTML + Javascript + CSS)
+
+
 
 ## 'Running' it:
 * It's not a working Macro. Just a GUI. (Macro work may come later)
