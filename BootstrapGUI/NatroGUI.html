@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>NatroBootstrap2</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/Switch-1.css">
+    <link rel="stylesheet" href="assets/css/switch.css">
+</head>
+
+<body class="d-flex">
+    <div class="container-fluid bg-dark d-flex flex-column vh-100 overflow-hidden">
+        <div>
+            <header class="bg-dark" style="height: 80px;">
+                <div class="row" style="height: 90px;margin-right: 0px;margin-left: 0px;">
+                    <div class="col-2 col-md-3 col-xl-1 text-center d-md-flex justify-content-md-center align-items-md-center" style="height: 90px;padding: 0px;max-width: 90px;"><img data-bss-hover-animate="pulse" src="assets/img/misc/NatroRedLogo.png"></div>
+                    <div class="col offset-xl-0" style="padding-top: 20px;">
+                        <div class="btn-toolbar d-xl-flex justify-content-xl-start">
+                            <div class="btn-group" role="group"><button class="btn btn-success border rounded-pill" type="button" style="margin-right: 10px;"> Start (F1)</button><button class="btn btn-warning border rounded-pill" type="button" style="margin-right: 10px;"> Pause (F2)</button><button class="btn btn-danger border rounded-pill" type="button" style="margin-right: 10px;"> Stop (F3)</button><button class="btn btn-light border rounded-pill" type="button" style="margin-right: 10px;"> AutoClick (F4)</button><button class="btn btn-light border rounded-pill" type="button" style="margin-right: 10px;"> Status (F5)</button></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="row flex-grow-1 overflow-hidden">
+            <div class="col-auto mh-100 overflow-auto" id="main-content-column">
+                <div class="d-flex align-items-start">
+                    <ul class="nav nav-pills nav-fill flex-column pe-3 border-end gap-2" role="tablist" id="sidebar-tabitems" aria-orientation="vertical" style="min-width: 135px;">
+                        <li class="nav-item" role="presentation"><a class="nav-link active text-start link-light" role="tab" data-bs-toggle="pill" href="#sidebar-gather"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-shovel" style="color: var(--yellow);font-size: 22px;margin-right: 5px;">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M17 4l3 3"></path>
+                                    <path d="M18.5 5.5l-8 8"></path>
+                                    <path d="M8.276 11.284l4.44 4.44a.968 .968 0 0 1 0 1.369l-2.704 2.704a4.108 4.108 0 0 1 -5.809 -5.81l2.704 -2.703a.968 .968 0 0 1 1.37 0z"></path>
+                                </svg>Gather</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-start link-light" role="tab" data-bs-toggle="pill" href="#sidebar-tab-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-ticket" style="color: var(--yellow);font-size: 22px;margin-right: 5px;">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M15 5l0 2"></path>
+                                    <path d="M15 11l0 2"></path>
+                                    <path d="M15 17l0 2"></path>
+                                    <path d="M5 5h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-3a2 2 0 0 0 0 -4v-3a2 2 0 0 1 2 -2"></path>
+                                </svg>Collect</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-start link-light" role="tab" data-bs-toggle="pill" href="#sidebar-tab-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-needle" style="color: var(--yellow);font-size: 22px;margin-right: 5px;">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M3 21c-.667 -.667 3.262 -6.236 11.785 -16.709a3.5 3.5 0 1 1 5.078 4.791c-10.575 8.612 -16.196 12.585 -16.863 11.918z"></path>
+                                    <path d="M17.5 6.5l-1 1"></path>
+                                </svg>Kill</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-start link-light" role="tab" data-bs-toggle="pill" href="#sidebar-tab-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-big-up-lines" style="color: var(--yellow);font-size: 22px;margin-right: 5px;">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M9 12h-3.586a1 1 0 0 1 -.707 -1.707l6.586 -6.586a1 1 0 0 1 1.414 0l6.586 6.586a1 1 0 0 1 -.707 1.707h-3.586v3h-6v-3z"></path>
+                                    <path d="M9 21h6"></path>
+                                    <path d="M9 18h6"></path>
+                                </svg>Boost</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-start link-light" role="tab" data-bs-toggle="pill" href="#sidebar-tab-5"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-question-mark" style="color: var(--yellow);font-size: 22px;margin-right: 5px;">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4"></path>
+                                    <path d="M12 19l0 .01"></path>
+                                </svg>Quest</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-start link-light" role="tab" data-bs-toggle="pill" href="#sidebar-tab-6"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-plant" style="color: var(--yellow);font-size: 22px;margin-right: 5px;">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M7 15h10v4a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2v-4z"></path>
+                                    <path d="M12 9a6 6 0 0 0 -6 -6h-3v2a6 6 0 0 0 6 6h3"></path>
+                                    <path d="M12 11a6 6 0 0 1 6 -6h3v1a6 6 0 0 1 -6 6h-3"></path>
+                                    <path d="M12 15l0 -6"></path>
+                                </svg>Planters</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-start link-light" role="tab" data-bs-toggle="pill" href="#sidebar-tab-7"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-list" style="color: var(--yellow);font-size: 22px;margin-right: 5px;">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M9 6l11 0"></path>
+                                    <path d="M9 12l11 0"></path>
+                                    <path d="M9 18l11 0"></path>
+                                    <path d="M5 6l0 .01"></path>
+                                    <path d="M5 12l0 .01"></path>
+                                    <path d="M5 18l0 .01"></path>
+                                </svg>Status</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-start link-light" role="tab" data-bs-toggle="pill" href="#sidebar-tab-8"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-settings" style="color: var(--yellow);font-size: 22px;margin-right: 5px;">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"></path>
+                                    <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                                </svg>Settings</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-start link-light" role="tab" data-bs-toggle="pill" href="#sidebar-tab-9"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-calculator" style="font-size: 22px;color: var(--yellow);margin-right: 5px;">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M4 3m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                                    <path d="M8 7m0 1a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1z"></path>
+                                    <path d="M8 14l0 .01"></path>
+                                    <path d="M12 14l0 .01"></path>
+                                    <path d="M16 14l0 .01"></path>
+                                    <path d="M8 17l0 .01"></path>
+                                    <path d="M12 17l0 .01"></path>
+                                    <path d="M16 17l0 .01"></path>
+                                </svg>Misc</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-start link-light" role="tab" data-bs-toggle="pill" href="#sidebar-tab-10"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-info-square" style="color: var(--yellow);font-size: 22px;margin-right: 5px;">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 9h.01"></path>
+                                    <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z"></path>
+                                    <path d="M11 12h1v4h1"></path>
+                                </svg>About</a></li>
+                    </ul>
+                    <div class="tab-content bg-light mh-100 overflow-auto bg-light" id="field-icon-buttons">
+                        <div class="tab-pane active" role="tabpanel" id="sidebar-gather" style="min-width: 800px;">
+                            <div class="bg-light ps-xl-0">
+                                <div class="row">
+                                    <div class="col">
+                                        <h1 style="font-size: 20px;">Click up to 3 fields to collect in:</h1>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-right: 0px;margin-left: 0px;">
+                                    <div class="col-auto" style="padding-right: 0px;padding-left: 0px;"><a id="btnAddStrawberry" href="#"><img data-bss-hover-animate="swing" src="assets/img/fieldIcons/strawberry.png" style="width:40px;height:40px;"></a></div>
+                                    <div class="col-auto" style="padding-right: 0px;padding-left: 0px;"><a id="btnAddBamboo" href="#"><img data-bss-hover-animate="swing" src="assets/img/fieldIcons/bamboo.png" style="width:40px;height:40px;"></a></div>
+                                    <div class="col-auto" style="padding-right: 0px;padding-left: 0px;"><a id="btnAddBlueflower" href="#"><img data-bss-hover-animate="swing" src="assets/img/fieldIcons/blueflower.png" style="width:40px;height:40px;"></a></div>
+                                    <div class="col-auto" style="padding-right: 0px;padding-left: 0px;"><a id="btnAddMushroom" href="#"><img data-bss-hover-animate="swing" src="assets/img/fieldIcons/mushroom.png" style="width:40px;height:40px;"></a></div>
+                                    <div class="col-auto" style="padding-right: 0px;padding-left: 0px;"><a id="btnAddPumpkin" href="#"><img data-bss-hover-animate="swing" src="assets/img/fieldIcons/pumpkin.png" style="width:40px;height:40px;"></a></div>
+                                    <div class="col-auto" style="padding-right: 0px;padding-left: 0px;"><a id="btnAddPineapple" href="#"><img data-bss-hover-animate="swing" src="assets/img/fieldIcons/pineapple.png" style="width:40px;height:40px;"></a></div>
+                                    <div class="col-auto" style="padding-right: 0px;padding-left: 0px;"><a id="btnAddRose" href="#"><img data-bss-hover-animate="swing" src="assets/img/fieldIcons/rose.png" style="width:40px;height:40px;"></a></div>
+                                    <div class="col-auto" style="padding-right: 0px;padding-left: 0px;"><a id="btnAddPinetree" href="#"><img data-bss-hover-animate="swing" src="assets/img/fieldIcons/pinetree.png" style="width:40px;height:40px;"></a></div>
+                                    <div class="col-auto" style="padding-right: 0px;padding-left: 0px;"><a id="btnAddSpider" href="#"><img data-bss-hover-animate="swing" src="assets/img/fieldIcons/spider.png" style="width:40px;height:40px;"></a></div>
+                                    <div class="col-auto" style="padding-right: 0px;padding-left: 0px;"><a id="btnAddStump" href="#"><img data-bss-hover-animate="swing" src="assets/img/fieldIcons/stump.png" style="width:40px;height:40px;"></a></div>
+                                    <div class="col-auto" style="padding-right: 0px;padding-left: 0px;"><a id="btnAddSunflower" href="#"><img data-bss-hover-animate="swing" src="assets/img/fieldIcons/sunflower.png" style="width:40px;height:40px;"></a></div>
+                                    <div class="col-auto" style="padding-right: 0px;padding-left: 0px;"><a id="btnAddPepper" href="#"><img data-bss-hover-animate="swing" src="assets/img/fieldIcons/pepper.png" style="width:40px;height:40px;"></a></div>
+                                    <div class="col-auto" style="padding-right: 0px;padding-left: 0px;"><a id="btnAddMountain" href="#"><img data-bss-hover-animate="swing" src="assets/img/fieldIcons/mountaintop.png" style="width:40px;height:40px;"></a></div>
+                                    <div class="col-auto" style="padding-right: 0px;padding-left: 0px;"><a id="btnAddCactus" href="#"><img data-bss-hover-animate="swing" src="assets/img/fieldIcons/cactus.png" style="width:40px;height:40px;"></a></div>
+                                    <div class="col-auto" style="padding-right: 0px;padding-left: 0px;"><a id="btnAddDandelion" href="#"><img data-bss-hover-animate="swing" src="assets/img/fieldIcons/dandelion.png" style="width:40px;height:40px;"></a></div>
+                                    <div class="col-auto" style="padding-right: 0px;padding-left: 0px;"><a id="btnAddCoconut" href="#"><img data-bss-hover-animate="swing" src="assets/img/fieldIcons/coconut.png" style="width:40px;height:40px;"></a></div>
+                                    <div class="col-auto" style="padding-right: 0px;padding-left: 0px;"><a id="btnAddClover" href="#"><img data-bss-hover-animate="swing" src="assets/img/fieldIcons/clover.png" style="width:40px;height:40px;"></a></div>
+                                </div>
+                                <div class="alert alert-danger alert-dismissible" role="alert" id="GatherWarningMessage" style="display: none;"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="alert"></button><span><strong>Warning</strong>: No more than 3 fields may be gathered from.</span></div>
+                                <div class="bg-light" id="GatherTabs">
+                                    <div>
+                                        <ul class="nav nav-pills" role="tablist" id="gather-tab-items"></ul>
+                                        <div class="tab-content" id="gather-tab-content"></div>
+                                    </div>
+                                </div>
+                                <div class="bg-light" id="GatherTabTemplate">
+                                    <div>
+                                        <ul class="nav nav-pills" role="tablist" id="tabs-item-template"></ul>
+                                        <div class="tab-content" id="tab-content-placeholder">
+                                            <div class="tab-pane active" role="tabpanel" id="tab-pane-template">
+                                                <div class="card" style="margin-bottom:6px;">
+                                                    <div class="card-header">
+                                                        <div class="row">
+                                                            <div class="col-md-2 col-lg-4" style="padding-right: 0px;padding-left: 0px;"><button class="btn btn-secondary btn-sm button-remove-current-tab" type="button" style="margin-right: 4px;"><i class="far fa-window-close" style="padding-left: 4px;padding-right: 4px;"></i>Remove</button><button class="btn btn-info btn-sm" id="saveTab-tab-0" type="button" style="margin-right: 4px;"><i class="far fa-save" style="padding-left: 4px;padding-right: 4px;"></i>Save Defaults</button></div>
+                                                            <div class="col-md-3 col-lg-3 offset-md-0 text-start" style="text-align:right;">
+                                                                <div class="form-check"><input type="checkbox" checked="" class="form-check-input" id="formCheck-1"><label class="form-label form-check-label" for="formCheck-2">Drift Compensation</label></div>
+                                                                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-3"><label class="form-label form-check-label" for="formCheck-14">Gather w/ Shift-Lock</label></div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-check" style="margin-bottom: 0px;"><input class="border rounded" type="number" style="margin-right:4px;width:40px;" value="10"><label class="form-label" style="margin: 0px;margin-right: 4px;">gather mins</label></div>
+                                                                <div class="form-check" style="margin-bottom: 0px;"><input class="border rounded" type="number" style="margin-right:4px;width:40px;" value="95"><label class="form-label" style="margin: 0px;">% pack fill</label></div>
+                                                            </div>
+                                                            <div class="col"><select class="border rounded">
+                                                                    <optgroup label="To hive by:">
+                                                                        <option value="12" selected="">Walk</option>
+                                                                        <option value="13">Reset</option>
+                                                                    </optgroup>
+                                                                </select></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col" style="text-align:center;">
+                                                                <div id="fieldMapHolder"><img id="draggableSprinkler-tab-0" src="assets/img/misc/Sprinkler_builder.png" style="width: 40px;height: 40px;z-index: 10000;position: absolute;left: 270px;top: 70px;"><img id="snaptarget-tab-0" src="assets/img/fieldMaps/placeholder_map.png"><div class="motion-path-tab-0">
+    <svg xmlns="http://www.w3.org/2000/svg"  id="pathSVG-tab-0" height="500" width="500" viewbox="-5 -5 500 500">
+
+    </svg>
+    <!-- <div id="pathBall-tab-0"></div> -->
+</div></div>
+                                                                <p><strong>Drag and drop the sprinkler</strong></p>
+                                                                <p>Your character will start the collecting pattern at the sprinkler.<br><br></p>
+                                                            </div>
+                                                            <div class="col-lg-3" style="background: rgba(0,123,255,0.25);box-shadow: 4px 4px 0px var(--bs-primary-bg-subtle);opacity: 1;filter: invert(0%);backdrop-filter: opacity(1);">
+                                                                <h5>Pattern Settings:</h5>
+                                                                <div class="row">
+                                                                    <div class="col text-start"><select class="border rounded" style="width: 166px;">
+                                                                            <optgroup label="Pattern Shape">
+                                                                                <option value="12" selected="">Auryn</option>
+                                                                                <option value="13" selected="">CornerXSnake</option>
+                                                                                <option value="14">Diamonds</option>
+                                                                                <option value="14" selected="">e_lol</option>
+                                                                                <option value="14">Fork</option>
+                                                                                <option value="14">Lines</option>
+                                                                                <option value="14">Slimline</option>
+                                                                                <option value="14">Snake</option>
+                                                                                <option value="14">Squares</option>
+                                                                                <option value="14">Supercat</option>
+                                                                                <option value="14">Xsnake</option>
+                                                                                <option value="14">Stationary</option>
+                                                                            </optgroup>
+                                                                        </select></div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <div class="row">
+                                                                            <div class="col"><label class="col-form-label fw-semibold">Width:</label></div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-lg-4" style="padding-right: 0px;"><input class="border rounded svgInputFields-tab-0" type="number" id="width-number-tab-0" style="margin-right: 4px;width: 40px;margin-left: 4px;" value="2" max="9" min="1" step="1"></div>
+                                                                            <div class="col"><input class="form-range" type="range" id="width-slider-tab-0" step="1" max="9" min="1" value="2"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <div class="row">
+                                                                            <div class="col"><label class="col-form-label fw-semibold">Length:</label></div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-lg-4" style="padding-right: 0px;"><input class="border rounded svgInputFields-tab-0" type="number" id="length-number-tab-0" style="margin-right: 4px;width: 40px;margin-left: 4px;" value="1" min="1" max="5" step="1"></div>
+                                                                            <div class="col"><input class="form-range" type="range" id="length-slider-tab-0" step="1" max="5" min="1" value="1"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <div class="row">
+                                                                            <div class="col"><label class="col-form-label fw-semibold">Rotate Camera:</label></div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-lg-4 align-self-center" style="padding-right: 0px;"><input class="border rounded svgInputFields-tab-0" type="number" id="rotate-number-tab-0" style="margin-right: 4px;width: 40px;margin-left: 4px;" value="0" min="-4" max="4" step="1"></div>
+                                                                            <div class="col text-end"><button class="btn btn-primary" id="rotate-left-tab-0" type="button" style="padding: 5px;width: 40px;margin: 2px;"><i class="fas fa-undo"></i></button><button class="btn btn-primary" id="rotate-right-tab-0" type="button" style="padding: 5px;width: 40px;margin: 2px;"><i class="fas fa-redo"></i></button></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <div class="row">
+                                                                            <div class="col"><label class="col-form-label fw-semibold">Invert controls:</label></div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12 text-end">
+                                                                                <div class="d-flex justify-content-between align-items-center form-check-inline my-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-flip-vertical" style="width: 20px;height: 20px;min-width: 20px;margin-right: 4px;">
+                                                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                                        <path d="M12 3l0 18"></path>
+                                                                                        <path d="M16 7l0 10l5 0l-5 -10"></path>
+                                                                                        <path d="M8 7l0 10l-5 0l5 -10"></path>
+                                                                                    </svg><label class="form-label form-check-label" for="flexSwitchCheckDefault">Left/Right:</label>
+                                                                                    <div class="d-lg-flex justify-content-lg-end align-items-lg-center form-switch"><input type="checkbox" id="invert-left-right-tab-0" class="form-check-input"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12 text-end">
+                                                                                <div class="d-flex justify-content-between align-items-center form-check-inline my-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-flip-horizontal" style="width: 20px;height: 20px;min-width: 20px;margin-right: 4px;">
+                                                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                                        <path d="M3 12l18 0"></path>
+                                                                                        <path d="M7 16l10 0l-10 5l0 -5"></path>
+                                                                                        <path d="M7 8l10 0l-10 -5l0 5"></path>
+                                                                                    </svg><label class="form-label form-check-label" for="flexSwitchCheckDefault">Fwd/Back:</label>
+                                                                                    <div class="d-lg-flex align-items-lg-center form-switch"><input class="justify-content-lg-end form-check-input" type="checkbox" id="invert-fwd-back-tab-0"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="sidebar-tab-2"></div>
+                        <div class="tab-pane" role="tabpanel" id="sidebar-tab-3"></div>
+                        <div class="tab-pane" role="tabpanel" id="sidebar-tab-4"></div>
+                        <div class="tab-pane" role="tabpanel" id="sidebar-tab-5"></div>
+                        <div class="tab-pane" role="tabpanel" id="sidebar-tab-6"></div>
+                        <div class="tab-pane" role="tabpanel" id="sidebar-tab-7"></div>
+                        <div class="tab-pane" role="tabpanel" id="sidebar-tab-8"></div>
+                        <div class="tab-pane" role="tabpanel" id="sidebar-tab-10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row flex-shrink-0 bg-dark">
+            <div class="col-12">
+                <p class="text-light">Status:&nbsp;</p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="assets/js/2/dynamicTabs.js"></script>
+</body>
+
+</html>
