@@ -23,6 +23,6 @@
 
 ## 'Running' it:
 * It's not a working Macro. Just a GUI. (Macro work may come later)
-* Download the repo contents, and run the .AHK file (adapted from [WebViewToo2](https://github.com/The-CoDingman/AHK/tree/main/v2/WebViewToo) )
+* [Download the zip](https://github.com/rpertusio/NatroBootstrap2/releases/), and run the .AHK file (adapted from [WebViewToo2](https://github.com/The-CoDingman/AHK/tree/main/v2/WebViewToo) )
 * Requires Windows 10/11
 * Or, you can simply open the ".html" file and it will open a browser to play with the controls
